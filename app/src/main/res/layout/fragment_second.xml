@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:background="@color/md_theme_light_secondaryContainer">
+
+  <EditText
+      android:id="@+id/localizationBig"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="#00000000"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      android:textSize="40sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginTop="5dp"
+      android:textColor="@color/md_theme_light_onPrimaryContainer"/>
+
+  <com.google.android.material.card.MaterialCardView
+      android:id="@+id/materialCardView2Big"
+      android:layout_width="300dp"
+      android:layout_height="300dp"
+      app:cardBackgroundColor="@color/md_theme_dark_secondaryContainer"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:strokeWidth="0dp"
+      android:layout_marginBottom="110dp"
+      app:cardElevation="10dp"/>
+
+  <com.google.android.material.card.MaterialCardView
+      android:id="@+id/materialCardViewBig"
+      android:layout_width="258dp"
+      android:layout_height="50dp"
+      app:cardBackgroundColor="@color/md_theme_light_onSecondary"
+      app:cardElevation="10dp"
+      app:layout_constraintBottom_toTopOf="@+id/materialCardView2Big"
+      app:layout_constraintEnd_toEndOf="@+id/materialCardView2Big"
+      app:layout_constraintStart_toStartOf="@+id/materialCardView2Big"
+      app:layout_constraintTop_toBottomOf="@+id/localizationBig"
+      app:strokeWidth="0dp"
+      android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/dateBig"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/md_theme_light_onPrimaryContainer"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:translationZ="100dp" />
+  </com.google.android.material.card.MaterialCardView>
+
+  <ImageView
+      android:id="@+id/imageBig"
+      android:layout_width="180dp"
+      android:layout_height="230dp"
+      android:layout_marginBottom="60dp"
+      android:translationZ="100dp"
+      app:layout_constraintBottom_toBottomOf="@+id/materialCardView2Big"
+      app:layout_constraintEnd_toEndOf="@+id/materialCardView2Big"
+      app:layout_constraintStart_toStartOf="@+id/materialCardView2Big"
+      app:layout_constraintTop_toBottomOf="@+id/materialCardViewBig"
+      app:srcCompat="@drawable/partlycloudy512" />
+
+  <TextView
+      android:id="@+id/temperatureBig"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/md_theme_light_secondaryContainer"
+      android:textSize="45sp"
+      android:textStyle="bold"
+      android:translationZ="100dp"
+      android:layout_marginBottom="25dp"
+      app:layout_constraintBottom_toBottomOf="@+id/materialCardView2Big"
+      app:layout_constraintEnd_toEndOf="@+id/materialCardView2Big"
+      app:layout_constraintStart_toStartOf="@+id/materialCardView2Big"
+      app:layout_constraintTop_toBottomOf="@+id/imageBig" />
+
+  <TextView
+      android:id="@+id/descriptionBig"
+      android:layout_width="350dp"
+      android:layout_height="40dp"
+      android:textAlignment="center"
+      android:textColor="@color/md_theme_light_onPrimaryContainer"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      android:translationZ="100dp"
+      app:layout_constraintBottom_toTopOf="@+id/imageView5Big"
+      app:layout_constraintEnd_toEndOf="@+id/materialCardView3Big"
+      app:layout_constraintStart_toStartOf="@+id/materialCardView3Big"
+      app:layout_constraintTop_toTopOf="@+id/materialCardView3Big" />
+
+  <TextView
+      android:id="@+id/pressureBig"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:translationZ="100dp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="@+id/materialCardView3Big"
+      app:layout_constraintEnd_toEndOf="@+id/imageView4Big"
+      app:layout_constraintStart_toStartOf="@+id/imageView4Big"
+      app:layout_constraintTop_toBottomOf="@+id/imageView4Big"
+      android:textSize="28sp"
+      android:textColor="@color/md_theme_light_onPrimaryContainer"/>
+
+  <TextView
+      android:id="@+id/sunriseBig"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:translationZ="100dp"
+      android:textSize="28sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="@+id/materialCardView3Big"
+      app:layout_constraintEnd_toEndOf="@+id/imageView5Big"
+      app:layout_constraintStart_toStartOf="@+id/imageView5Big"
+      app:layout_constraintTop_toBottomOf="@+id/imageView5Big"
+      android:textColor="@color/md_theme_light_onPrimaryContainer"/>
+
+  <TextView
+      android:id="@+id/sunsetBig"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:translationZ="100dp"
+      android:textSize="28sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="@+id/materialCardView3Big"
+      app:layout_constraintEnd_toEndOf="@+id/imageView6Big"
+      app:layout_constraintStart_toStartOf="@+id/imageView6Big"
+      app:layout_constraintTop_toBottomOf="@+id/imageView6Big"
+      android:textColor="@color/md_theme_light_onPrimaryContainer"/>
+
+  <ImageView
+      android:id="@+id/imageView4Big"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:translationZ="100dp"
+      app:layout_constraintBottom_toBottomOf="@+id/materialCardView3Big"
+      app:layout_constraintEnd_toStartOf="@+id/imageView5Big"
+      app:layout_constraintStart_toStartOf="@+id/materialCardView3Big"
+      app:layout_constraintTop_toTopOf="@+id/materialCardView3Big"
+      app:srcCompat="@drawable/barometer" />
+
+  <ImageView
+      android:id="@+id/imageView5Big"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      app:layout_constraintBottom_toBottomOf="@+id/materialCardView3Big"
+      app:layout_constraintEnd_toEndOf="@+id/materialCardView3Big"
+      app:layout_constraintStart_toStartOf="@+id/materialCardView3Big"
+      app:layout_constraintTop_toTopOf="@+id/materialCardView3Big"
+      app:srcCompat="@drawable/sunrise"
+      android:translationZ="100dp"/>
+
+  <ImageView
+      android:id="@+id/imageView6Big"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:translationZ="100dp"
+      app:layout_constraintBottom_toBottomOf="@+id/materialCardView3Big"
+      app:layout_constraintEnd_toEndOf="@+id/materialCardView3Big"
+      app:layout_constraintStart_toEndOf="@+id/imageView5Big"
+      app:layout_constraintTop_toTopOf="@+id/materialCardView3Big"
+      app:srcCompat="@drawable/sunset" />
+
+  <com.google.android.material.card.MaterialCardView
+      android:id="@+id/materialCardView3Big"
+      android:layout_width="360dp"
+      android:layout_height="230dp"
+      android:elevation="10dp"
+      android:translationZ="10dp"
+      app:cardBackgroundColor="@color/md_theme_light_onSecondary"
+      app:cardElevation="10dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/materialCardView2Big"
+      app:strokeWidth="0dp" />
+
+  <TextView
+      android:id="@+id/separatorBig"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="@+id/materialCardView2Big"
+      app:layout_constraintEnd_toEndOf="@+id/materialCardView2Big"
+      app:layout_constraintStart_toStartOf="@+id/materialCardView2Big"
+      app:layout_constraintTop_toTopOf="@+id/materialCardView2Big" />
+
+  <TextView
+      android:id="@+id/timeBig"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/md_theme_light_onPrimaryContainer"
+      android:textSize="25sp"
+      android:textStyle="bold"
+      android:translationZ="100dp"
+      android:layout_marginEnd="20dp"
+      app:layout_constraintBottom_toBottomOf="@+id/materialCardViewBig"
+      app:layout_constraintEnd_toEndOf="@+id/materialCardViewBig"
+      app:layout_constraintTop_toTopOf="@+id/materialCardViewBig" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/back"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:layout_marginStart="5dp"
+      android:layout_marginTop="5dp"
+      android:clickable="true"
+      app:backgroundTint="@color/md_theme_light_onSecondary"
+      app:elevation="10dp"
+      app:fabCustomSize="60dp"
+      app:fabSize="normal"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/arrow56"/>
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/searchCityBig"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginEnd="5dp"
+      android:clickable="true"
+      app:backgroundTint="@color/md_theme_light_onSecondary"
+      app:elevation="10dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/search128"
+      app:fabCustomSize="60dp"/>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
